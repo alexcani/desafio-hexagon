@@ -31,10 +31,10 @@ Para compilar sua própria versão basta utilizar um compilador qualquer de C++ 
  A estrutura geral do programa consiste em:
  
  1. Abrir os arquivos de entrada e saída, verificando se as operações foram realizadas com sucesso.
- 1. Extrair os dados da medição crua do acelerometro (8g). De acordo com o datasheet disponível [neste link](https://www.nxp.com/docs/en/data-sheet/MMA8451Q.pdf),
- o modo 8g implica em uma escala de 1024 contagens/g. Isto foi interpretado como significando que, por exemplo, para uma [0 0 1024] os valores
+ 1. Extrair os dados da medição crua do acelerômetro (8g). De acordo com o datasheet disponível [neste link](https://www.nxp.com/docs/en/data-sheet/MMA8451Q.pdf),
+ o modo 8g implica em uma escala de 1024 contagens/g. Isto foi interpretado como significando que, por exemplo, para uma leitura [0 0 1024] os valores
  equivalentes, em g, sejam [0 0 1].
- 1. Negar a medição (x = -x) e dividir por 1024 devido a escala.
+ 1. Negar a medição (x = -x) e dividir por 1024 devido à escala.
  1. Calcular através das fórmulas os valores dos ângulos.
  1. Escrever no arquivo de saída os valores convertidos em graus, no formato
  >> roll; pitch
