@@ -23,10 +23,10 @@ Para compilar sua própria versão basta utilizar um compilador qualquer de C++ 
  
  ### Metodologia
  
- Para realizar a estimação dos ângulos e roll e pitch, foi utilizada a metodologia descrita em [AN3461](http://www.nxp.com/docs/en/application-note/AN3461.pdf).
+ Para realizar a estimação dos ângulos de roll e pitch, foi utilizada a metodologia descrita em [AN3461](http://www.nxp.com/docs/en/application-note/AN3461.pdf).
  
  As equações utilizadas foram 37 e 38, que evitam problemas de instabilidade numérica para regiões de singularidade. Além disso, foi
- utilizada a função atan2(...), que determinar automaticamente o quadrante do ângulo com base nos sinais dos parâmetros.
+ utilizada a função atan2(...), que determina automaticamente o quadrante do ângulo com base nos sinais dos parâmetros.
  
  A estrutura geral do programa consiste em:
  
